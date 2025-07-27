@@ -13,6 +13,7 @@ module.exports = defineConfig([
     },
     rules: {
       "react-native/no-unused-styles": "error",
+      "comma-dangle": "on",
     },
   },
 ]);
