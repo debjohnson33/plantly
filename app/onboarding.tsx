@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     alignItems: "center",
     backgroundColor: theme.colorWhite,
-    padding: 24,
+    paddingHorizontal: 24,
   },
   heading: {
     fontSize: 42,
