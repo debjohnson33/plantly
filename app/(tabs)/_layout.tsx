@@ -1,13 +1,12 @@
-import { Tabs, Redirect, Link } from "expo-router";
+import { Tabs, Redirect, SplashScreen } from "expo-router";
 // import { Text } from "react-native";
 import Entypo from "@expo/vector-icons/Entypo";
 import Feather from "@expo/vector-icons/Feather";
 import { theme } from "@/theme";
 import { useUserStore } from "@/store/userStore";
-import AntDesign from "@expo/vector-icons/AntDesign";
-import { Pressable } from "react-native";
 
 export default function Layout() {
+  SplashScreen.hideAsync();
   const hasFinishedOnboarding = useUserStore(
     // eslint-disable-next-line prettier/prettier
     (state) => state.hasFinishedOnboarding
